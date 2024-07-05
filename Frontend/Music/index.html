@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <span id="close"><i class="bi bi-x-lg"></i></span>
+            <div class="home">
+                <div class="logo">
+                    <img src="logo.svg" alt="Spotify">
+                    <h2>Spotify</h2>
+                </div>
+                <ul>
+                    <li><img src="home.svg" alt="Home">Home</li>
+                    <li><img src="search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library">
+                <div class="heading">
+                    <img src="playlist.svg" alt="Playlist">
+                    <h3>Your Library</h3>
+                    <span><i class="bi bi-plus-lg"></i></span>
+                </div>
+                <div class="songList">
+                    <ul>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <a href="https://www.spotify.com/in-en/legal/end-user-agreement/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/reporting-content">PrivacyCenter</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">PrivacyPolicy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">AboutAds</a>
+                    <a href="https://www.spotify.com/in-en/accessibility">Accessibility</a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="nav">
+                    <span id="hmb"><i class="bi bi-list"></i></span>
+                    <span><i class="bi bi-arrow-left"></i></span>
+                    <span><i class="bi bi-arrow-right"></i></span>
+                </div>
+                <div class="btn">
+                    <button id="btn1">Sign up</button>
+                    <button id="btn2">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <h2>Spotify Playlists</h2>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="btn1">
+                            <span><i class="bi bi-play-fill"></i></span>
+                        </div>
+                        <img src="./img/1.jpeg" alt="You And Me">
+                        <h2>You And Me</h2>
+                        <p>Shubh</p>
+                    </div>
+    
+                    <div class="card">
+                        <div class="btn1">
+                            <span><i class="bi bi-play"></i></span>
+                        </div>
+                        <img src="./img/2.jpeg" alt="You And Me">
+                        <h3>Raatan Kaaliyan</h3>
+                        <p>Laadi Chahal</p>
+                    </div>
+                </div>
+                <div class="play">
+                    <div class="seekbar">
+                        <div id="circle">
+                        </div>
+                    </div>
+                    <div class="above">
+                        <div class="songinfo">
+                            Playing Song
+                        </div>
+                        <div class="songbtn">
+                            <span id="prev"><i class="bi bi-skip-backward-circle"></i></span>
+                            <img id="play" src="play.svg" alt="play">
+                            <span id="next"><i class="bi bi-skip-forward-circle"></i></span>
+                        </div>
+                        <div class="songtime">00:00 / 00:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="bx">
+            Hey I am a box;
+        </div>
+    </div>
+    <button id="btn">Click</button>
+    
+    <script>
+        let button = document.getElementById("btn");
+        button.addEventListener("click", ()=>{
+            document.getElementById("bx").innerHTML = "You are clicked";
+        })
+
+        button.addEventListener("dblclick",()=>{
+            document.getElementById("bx").hidden = true;
+        })
+        button.addEventListener("contextmenu",()=>{
+            alert("hello");
+        })
+
+        document.addEventListener("keypress",(e)=>{
+            console.log(e.key);
+        })
+    </script>
+</body>
+</html>

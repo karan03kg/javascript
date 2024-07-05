@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div>Hey hello</div>
+        <div>How are you</div>
+    </div>
+    <script>
+        console.log(document.querySelector(".content").hidden);
+
+        let div = document.createElement("div");
+        div.innerHTML = "I am get inserted";
+        div.setAttribute("class","created");
+        document.querySelector(".content").append(div);
+
+        document.querySelector(".content").insertAdjacentHTML("afterbegin","<b>hello how was your exam</b>");
+        // document.querySelector(".content").remove()
+
+        document.querySelector(".content").classList.add("red");
+    </script>
+</body>
+</html>
